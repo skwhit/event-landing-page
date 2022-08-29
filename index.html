@@ -11,26 +11,100 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <nav class="navbar bg-light">
-        <div class="container-fluid">
+    <header>
+      <nav class="navbar bg-dark mb-">
+        <div class="container-fluid d-flex justiy-content-between">
           <a class="navbar-brand">Navbar</a>
-          <ul class="d-flex list-unstyled justify-content-start gap-3">
-            <li class="inline-item"><a class="text-decoration-none" href="">Speakers</a></li>
-            <li class="inline-item"><a class="text-decoration-none" href="">Tickets</a></li>
+          <ul class="d-flex list-unstyled gap-3 pt-3">
+            <li class="inline-item"><a class="text-decoration-none" href="#speakers">Speakers</a></li>
+            <li class="inline-item"><a class="text-decoration-none" href="#tickets">Tickets</a></li>
             <li class="inline-item"><a class="text-decoration-none" href="">Venue</a></li>
           </ul>
         </div>
       </nav>
     </header>
-      <div class="container-fluid">
-        <div class="p-5 mb-4 bg-light rounded-3 bg-jumbotron">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-            <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-            <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        <section>
+          <div class="p-5 mb-4 bg-light bg-jumbotron text-center">
+            <div class="container-fluid py-5 d-flex flex-column align-items-center">
+              <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+              <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+              <button class="btn btn-primary btn-lg" type="button">Example button</button>
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="container-fluid" id="speakers">
+          <div class="row text-center">
+              <h1>The Speakers</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium itaque molestiae quibusdam amet! Vero harum aut perferendis dicta non!</p>
+          </div>
+          <div class="row text-center d-flex no-wrap px-4">
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card" >
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tickets" class="mt-4">
+          <div class="mb-4 bg-dark text-white">
+            <div class="container-fluid py-4 d-flex flex-column align-items-center gap-5 text-center">
+              <h1 class="display-5 fw-bold">Get Your Ticket Today!</h1>
+              <p class="col-md-8 fs-4">Each ticket inludes: 20 speakers, 1000 participants, 15 sessions, 5 Keynotes.</p>
+              <button class="btn btn-primary btn-lg" type="button">BUY TICKETS $149</button>
+            </div>
+          </div>
+        </section>
+        <section id="venue">
+          <div class="row">
+            <div class="col-md-6 px-4 d-flex flex-column">
+              <h2>The Venue</h2>
+              <p>Our event will be held at the      <strong>Main Office headquarterws at Provost & East Building 145 City Road, London.</strong>
+              </p>
+              <div class="w-100 h-75">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d10753.62405731443!2d-119.80023076908411!3d36.74485337747089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d36.741136399999995!2d-119.79565149999999!4m3!3m2!1d36.7407237!2d-119.79556579999999!5e0!3m2!1sen!2sus!4v1661732127773!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="col-md-6 h-100 d-flex align-items-center">
+              <img class="px-3" src="https://images.unsplash.com/photo-1534429445372-719f413efe72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Image of the Venue" width="100%" height="100%">
+            </div>
+          </div>
+        </section>
       </div>
     </header>
     <script src="./js/bootstrap.min.js"></script>
